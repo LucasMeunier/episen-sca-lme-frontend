@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "espisen-sca-lme-frontend"
+    }
+  },
+  "defaultProject": "espisen-sca-lme-frontend",
+  "cli": {
+    "analytics": false
+  }
 }

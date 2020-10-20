@@ -1,0 +1,10 @@
+<div>
+  <h2>Order page</h2>
+  <label>
+    <input type="text" #message>
+  </label>
+  <button class="btn btn-primary sending_button" (click)="launchRegistration(message.value)" type="button">Insérer une données</button>
+</div>
+<h5>Dernier message envoyé durant la session:</h5>
+<p>{{input}}</p>
+<p>Fin de la page</p>
