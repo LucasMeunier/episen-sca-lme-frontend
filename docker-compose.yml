@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  front:
+    image: lucasmeunier/episen-sca-lme-front
+    labels:
+      - "com.docker.order.front.version=1.0.0"
+    ports:
+      - "80:80"
+    links:
+      - "app"
+
+  app:
+    image: lucasmeunier/episen-sca-lme-back
+    labels:
+      - "com.docker.order.version=1.0.0"
+      - "com.docker.order.dockerfile.date=15.10.2020"
+    ports:
+      - "8080:8080"
+    volumes:
+      - vol_test:/app
+
+volumes:
+  vol_test:
+
